@@ -13,20 +13,37 @@ For this task you will create an HTML document with the following features:
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Introduction to HTML</title>
+  </head>
+  <body>
+    <h1>Welcome to My First HTML Page</h1>
+    <h2>About Me</h2>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-  
-<body>
+    <p>
+      My name is Erich, and I enjoy <b>soccer</b>, <i>music</i>, and learning how to code.
+      HTML lets me build cool web pages using <b>tags</b> like these!
+    </p>
 
+    <p>
+      HTML stands for <b>HyperText Markup Language</b>, and it helps structure what we see on the web.
+    </p>
 
+    <img src="soccerball.png" 
+         width="150" alt="Soccer Ball">
 
-  
-  <script src="script.js"></script>
-</body>
+    <br><br>
 
+    <button type="button" onclick="askUser()">Click Me!</button>
+
+    <script>
+      function askUser() {
+        let hobby = prompt("What’s your favorite hobby?");
+        alert("That’s awesome! I also like " + hobby + "!");
+      }
+    </script>
+  </body>
 </html>
+
